@@ -42,7 +42,7 @@ public class CargarFragment extends Fragment {
             if (msg == null || msg.isEmpty()) return;
             Toast.makeText(requireContext(), msg, Toast.LENGTH_SHORT).show();
             if (msg.toLowerCase().contains("correctamente")) {
-                // limpiar campos tras éxito
+
                 binding.etCodigo.setText("");
                 binding.etDescripcion.setText("");
                 binding.etPrecio.setText("");

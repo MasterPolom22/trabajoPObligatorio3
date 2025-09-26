@@ -10,7 +10,7 @@ public class CargarViewModel extends ViewModel {
 
     private final ProductoRepository repo = ProductoRepository.getInstance();
 
-    // Mensajes de resultado hacia la UI (éxito o error)
+
     private final MutableLiveData<String> _mensaje = new MutableLiveData<>();
     public LiveData<String> mensaje = _mensaje;
 

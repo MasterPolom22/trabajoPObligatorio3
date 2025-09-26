@@ -32,7 +32,7 @@ public class SalirFragment extends Fragment {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            // Layout vacío opcional; no es estrictamente necesario
+
             return new View(requireContext());
         }
 
