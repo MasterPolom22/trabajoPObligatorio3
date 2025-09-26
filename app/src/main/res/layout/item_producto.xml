@@ -7,26 +7,34 @@
     android:orientation="vertical"
     android:background="?android:selectableItemBackground"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="80dp"
     tools:context=".adapter.ProductoAdapter">
 
     <TextView
         android:id="@+id/tvDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="6sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:ellipsize="end" />
 
     <TextView
         android:id="@+id/tvCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Código"
         android:layout_marginTop="2dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:maxLines="1"
+        android:ellipsize="end" />
 
     <TextView
         android:id="@+id/tvPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio"
         android:layout_marginTop="2dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:maxLines="1"
+        android:ellipsize="end" />
 
 </LinearLayout>
