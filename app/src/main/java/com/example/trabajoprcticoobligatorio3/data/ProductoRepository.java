@@ -37,6 +37,16 @@ public class ProductoRepository {
         return productosLive;
     }
 
+    public synchronized Producto buscarPorCodigo(String codigo) {
+        if (codigo == null) return null;
+        String needle = codigo.trim();
+        if (needle.isEmpty()) return null;
+        for (Producto p : backing) {
+            if (p.getCodigo().equalsIgnoreCase(needle)) return p;
+        }
+        return null;
+    }
+
 
 
     /**

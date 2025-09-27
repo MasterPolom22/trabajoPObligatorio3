@@ -13,8 +13,13 @@
             android:icon="@drawable/listar"
             android:title="@string/menu_listar" />
         <item
+            android:id="@+id/nav_busqueda"
+            android:icon="@drawable/buscar"
+            android:title="Buscar x Codigo" />
+        <item
             android:id="@+id/nav_salir"
             android:icon="@drawable/exit1"
             android:title="@string/menu_salir" />
+
     </group>
 </menu>
